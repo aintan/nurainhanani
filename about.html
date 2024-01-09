@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="file:///C:/Users/User/Documents/IMS458-%20E%20RESUME/index.html" class="logo">A.Hanani</a>
+
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="education.html">Education</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+   <section class="about" id="about">
+         <h2 class="heading">About Me</h2>
+
+         <div class="box">
+            <div class="content">
+               <img src="nani.jpg">
+               <h2>Web Developer</h2>
+            </div>
+         </div>
+         
+   </section>
+        
+        <div class="about-content">
+         <div class="text">
+            <p>Hello! I am NUR AIN HANANI BINTI TAN YUSOP, and I would like to welcome you to my eResume 
+            website. <br>My academic experience has been essential in developing a solid basis for strategic
+            IT solutions, since<br>I hold a Bachelor of Information Science (Hons) in Information System 
+            Management. I have successfully<br>navigated the relationship of technology and business as a person who is
+               passionate about Information<br>System Management. My educational background has given me a 
+               thorough understanding of information <br>systems, data management, and strategic IT solutions.<br>
+               Please feel free to look over my portfolio, which has a full summary of my skills and certifications. <br>
+               I am proud of my academic achievements and how they have influenced my approach to Information <br> System 
+               Management.<br> I am actively looking for connections with like-minded people, potential partners, and organisations <br>
+               who share my values. Please use the contact information given to make queries or appointments.<br>
+               Thank you for taking the time to discover more about me. I'm looking forward to <br> the opportunity to 
+               collaborate on exciting projects in the future.</p>
+            <br>
+            <p>Best regards,
+            <br>
+               NUR AIN HANANI BINTI TAN YUSOP</p>
+            <br>
+
+            </div>
+            
+            <div class="btn">
+               <div class="play"></div>
+               <p><b>Watch Video</b></p>
+            </div>
+            <div class="clip">
+               <video src="vid resume.MOV" controls></video>
+               <b class="close">Close</b>
+            </div>
+            <script>
+               let btn = document.querySelector('.btn');
+               let clip = document.querySelector('.clip');
+               let close = document.querySelector('.close');
+               let video = document.querySelector('video');
+               btn.onclick = function(){
+                  btn.classList.add('active') 
+                  clip.classList.add('active')
+                  video.play();
+                  video.currentTime = 0;
+               }
+               close.onclick = function(){
+                  btn.classList.remove('active') 
+                  clip.classList.remove('active')
+                  video.pause();
+               }
+                  
+              
+            </script>
+
+    <footer>
+      <p> &copy; Copyright 2023. Nur Ain Hanani. All Rights Reserved.
+          Terms & Conditions. Privacy Policy</p>
+  </footer>
+
+    
+
+    
+</body>
+</html>
